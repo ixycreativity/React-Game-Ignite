@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadGames } from "../actions/gamesAction";
 import Game from "../components/Game";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import GameDetail from "../components/GameDetails";
 import { useLocation } from "react-router-dom";
 
@@ -21,7 +21,9 @@ const Home = () => {
 
   return (
     <GameList>
-      {pathId && <GameDetail />}
+      <AnimatePresence>
+        {pathId && <GameDetail pathId={pathId} />}
+      </AnimatePresence>
       <h2>Upcoming games:</h2>
       <Games>
         {upcoming.map((game) => (
