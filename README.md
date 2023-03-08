@@ -4,4 +4,4 @@ It uses Axios, Redux Toolkit, React Router Dom, styled-components and framer-mot
 
 It requires an api key that is not available through github.
 
-![Ignite 1](https://alexandramuresan.ro/github/ignite-1.PNG)
+![Ignite 1](https://alexandramuresan.ro/github/ignite-1.png)
